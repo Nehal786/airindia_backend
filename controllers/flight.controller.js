@@ -27,7 +27,7 @@ async function createFlight(req,res) {
 async function searchFlight(req,res) {
     try {
 
-        const flight = await Flight.findById({
+        const flight = await Flight.find({
             _id:req.params.id
     
         })
